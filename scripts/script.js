@@ -2,14 +2,15 @@ let wordToGuess;
 let wordToDisplay;
 let mistakesCount = 0;
 let listOfCorrectLetters = [];
-let drawing = document.querySelector("#drawing");
+const drawing = document.querySelector("#drawing");
+const drawingBox = document.querySelector("#drawing-box");
 const letters = document.querySelector("#letters");
 const word = document.querySelector("#word");
 const status = document.querySelector("#status");
 
 
 startGame()
-drawing.onclick = startGame;
+drawingBox.onclick = startGame;
 
 function createButtons() {
   letters.innerHTML = "";
@@ -62,6 +63,7 @@ function checkLetter() {
 }
 
 function disableGame() {
+  drawingBox.style.opacity = "1";
   for (let letter of letters.children) {
     letter.setAttribute("disabled", "");
     document.querySelector("#restart").textContent = "C'est fini ? Tu peux cliquer sur l'image du pendu pour recommencer";
@@ -75,7 +77,8 @@ function resetContent() {
   listOfCorrectLetters = [];
   document.querySelector("#correct-letters").textContent = `${listOfCorrectLetters.length}`;
   status.className = "white";
-  drawing.src = "./styles/images/p0.gif"
+  drawing.src = "./styles/images/p0.gif";
+  drawingBox.style.opacity = "0.2";
   status.textContent = "Prêt à mourir ?";
 }
 
