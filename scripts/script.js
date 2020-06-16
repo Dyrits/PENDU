@@ -56,7 +56,7 @@ function checkLetter() {
     status.className = "red";
     status.textContent = `La lettre ${this.value} n'est pas présente dans le mot!`;
     if (mistakesCount === 6) {
-      status.textContent = `Le mot était ${wordToGuess} ! Vous avez perdu ! Vous êtes donc décédé. Profitez-bien de l'au-delà...`;
+      status.textContent = `Vous avez perdu ! Le mot était ${wordToGuess} ! Vous êtes donc décédé. Profitez-bien de l'au-delà...`;
       disableGame();
     }
   }
