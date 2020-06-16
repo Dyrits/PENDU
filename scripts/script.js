@@ -31,7 +31,7 @@ function defineWordToGuess() {
 function displayWordToGuess() {
   wordToDisplay = String();
   for (let letter of wordToGuess) {
-      wordToDisplay += listOfCorrectLetters.includes(letter) ? letter  + "  " : "?  "
+      wordToDisplay += listOfCorrectLetters.includes(letter) ? letter  + "  " : "_  "
   }
   word.textContent = wordToDisplay;
 }
@@ -44,7 +44,7 @@ function checkLetter() {
     status.textContent = `La lettre ${this.value} est bien présente dans le mot!`;
     document.querySelector("#correct-letters").textContent = `${listOfCorrectLetters.length}`;
     displayWordToGuess()
-    if (!wordToDisplay.includes("?")) {
+    if (!wordToDisplay.includes("_")) {
       status.textContent = `La lettre ${this.value} est bien présente dans le mot! Vous survivez en étant à ${6 - mistakesCount} doigt(s) de la mort. `;
       disableGame();
     }
