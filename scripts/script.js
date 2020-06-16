@@ -64,10 +64,12 @@ function checkLetter() {
 function disableGame() {
   for(let letter of letters.children) {
     letter.setAttribute("disabled", "");
+    document.querySelector("#restart").textContent = "C'est fini ? Tu peux cliquer sur l'image du pendu pour recommencer";
   }
 }
 
 function startGame() {
+  document.querySelector("#restart").textContent = "Tu n'aimes pas ce mot ? Tu peux cliquer sur l'image du pendu pour recommencer avec un nouveau mot.";
   mistakesCount = 0;
   document.querySelector("#mistakes").textContent = `${mistakesCount}`;
   listOfCorrectLetters = [];
