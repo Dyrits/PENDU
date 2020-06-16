@@ -68,7 +68,7 @@ function disableGame() {
   }
 }
 
-function startGame() {
+function resetContent() {
   document.querySelector("#restart").textContent = "Tu n'aimes pas ce mot ? Tu peux cliquer sur l'image du pendu pour recommencer avec un nouveau mot.";
   mistakesCount = 0;
   document.querySelector("#mistakes").textContent = `${mistakesCount}`;
@@ -77,6 +77,10 @@ function startGame() {
   status.className = "white";
   drawing.src = "./styles/images/p0.gif"
   status.textContent = "Prêt à mourir ?";
+}
+
+function startGame() {
+  resetContent()
   createButtons()
   defineWordToGuess()
   displayWordToGuess()
