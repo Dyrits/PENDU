@@ -6,7 +6,7 @@
 ENI | LE DÉVELOPPEMENT WEB COTE CLIENT 
 TRAVAUX PRATIQUE : Module 8 : Le Language JavaScript
 
-### [Description of the project by ENI](https://github.com/Dyrits/MY-MUSIC/blob/master/Module%2007%20-%20Enonc%C3%A9%20TP%20-%20Application%20My%20Music.pdf)
+### [Description of the project by ENI](https://github.com/Dyrits/PENDU/blob/master/Module%2008%20-%20Enonc%C3%A9%20TP%2001%20-%20Le%20jeu%20du%20pendu.pdf)
 
 ### Technologies | Libraries | Frameworks | Tools  
 - HTML
