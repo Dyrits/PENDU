@@ -31,7 +31,7 @@ function defineWordToGuess() {
 function displayWordToGuess() {
   wordToDisplay = String();
   for (let letter of wordToGuess) {
-      wordToDisplay += listOfCorrectLetters.includes(letter) ? letter  + "  " : "_  "
+    wordToDisplay += listOfCorrectLetters.includes(letter) ? letter + "  " : "_  "
   }
   word.textContent = wordToDisplay;
 }
@@ -49,7 +49,7 @@ function checkLetter() {
       disableGame();
     }
   } else {
-    mistakesCount ++;
+    mistakesCount++;
     document.querySelector("#mistakes").textContent = `${mistakesCount}`;
     drawing.src = `./styles/images/p${mistakesCount}.gif`
     status.className = "red";
@@ -62,7 +62,7 @@ function checkLetter() {
 }
 
 function disableGame() {
-  for(let letter of letters.children) {
+  for (let letter of letters.children) {
     letter.setAttribute("disabled", "");
     document.querySelector("#restart").textContent = "C'est fini ? Tu peux cliquer sur l'image du pendu pour recommencer";
   }
