@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
+
+$blue: #132237;
+
+body {
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Flavors', cursive;
+}
+
+header {
+  h1 {
+    color: white;
+    text-align: center;
+  }
+}
+
+#drawing-box {
+  background-color: #FFF;
+  opacity: 0.2;
+  border-radius: 75px;
+  width: 256px;
+  margin: 0 auto;
+  padding: 10px;
+  transition: opacity 1.6s;
+  #drawing {
+    width: 100%;
+    margin: 0 auto;
+  }
+  &:hover { opacity: 1;}
+}
+
+#word {
+  color: #FFF;
+  text-shadow: 2px 2px #000;
+  width: 50%;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 52px;
+  @media screen and (max-width: 992px) {
+    font-size: 39px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+#letters {
+  display: flex;
+  width: 50%;
+  margin: 25px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (max-width: 992px) {
+    width: 65%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+}
+
+button {
+  font-family: 'Flavors', cursive;
+  background-color: lighten($blue, 20%);
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px lighten($blue, 40%);
+  transition: transform 0.4s;
+  &:hover {
+    background-color: $blue;
+    transform: rotate(45deg) translateY(6px);
+  }
+  &:active {
+    background-color: darken($blue, 10%);
+    box-shadow: 0 4px lighten($blue, 10%);
+    transform: rotate(-45deg) translateY(6px);
+  }
+  &[disabled] {
+    opacity: 0.2;
+  }
+  @media screen and (max-width: 992px) {
+    width: 40px;
+    height: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#game-status {
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+  width: 50%;
+  margin: 25px auto;
+  text-shadow: 2px 2px #000;
+  @media screen and (max-width: 992px) {
+    font-size: 20px;
+    width: 65%;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    width: 80%;
+  }
+  #restart {
+    font-size: 16px;
+  }
+}
+
+.red { color: red; }
+.green { color: green; }
+.white {color: white; }

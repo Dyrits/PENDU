@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Flavors&display=swap");
+body {
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Flavors", cursive;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+}
+
+#drawing-box {
+  background-color: #FFF;
+  opacity: 0.2;
+  border-radius: 75px;
+  width: 256px;
+  margin: 0 auto;
+  padding: 10px;
+  transition: opacity 1.6s;
+}
+#drawing-box #drawing {
+  width: 100%;
+  margin: 0 auto;
+}
+#drawing-box:hover {
+  opacity: 1;
+}
+
+#word {
+  color: #FFF;
+  text-shadow: 2px 2px #000;
+  width: 50%;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 52px;
+}
+@media screen and (max-width: 992px) {
+  #word {
+    font-size: 39px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #word {
+    font-size: 26px;
+  }
+}
+
+#letters {
+  display: flex;
+  width: 50%;
+  margin: 25px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  #letters {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #letters {
+    width: 80%;
+  }
+}
+
+button {
+  font-family: "Flavors", cursive;
+  background-color: #2d5183;
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px #5382c3;
+  transition: transform 0.4s;
+}
+button:hover {
+  background-color: #132237;
+  transform: rotate(45deg) translateY(6px);
+}
+button:active {
+  background-color: #060b11;
+  box-shadow: 0 4px #20395d;
+  transform: rotate(-45deg) translateY(6px);
+}
+button[disabled] {
+  opacity: 0.2;
+}
+@media screen and (max-width: 992px) {
+  button {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  button {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#game-status {
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+  width: 50%;
+  margin: 25px auto;
+  text-shadow: 2px 2px #000;
+}
+@media screen and (max-width: 992px) {
+  #game-status {
+    font-size: 20px;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #game-status {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+#game-status #restart {
+  font-size: 16px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.white {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pendu</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<header>
+<h1>PENDU</h1>
+</header>
+<main>
+    <section id="drawing-box">
+            <img src="./styles/images/p0.gif" alt="drawing" id="drawing">
+    </section>
+    <section id="word">
+    </section>
+    <section id="letters">
+    </section>
+    <section id="game-status">
+        <p>Nombre d'erreurs: <span id="mistakes">0</span> | Lettres trouvées: <span id="correct-letters">0</span></p>
+        <p id="status" class="white">Prêt à mourir ?</p>
+        <p id="restart">Tu n'aimes pas ce mot ? Tu peux cliquer sur l'image du pendu pour recommencer avec un nouveau mot.</p>
+    </section>
+</main>
+
+<script src="./scripts/dictionnaire.js"></script>
+<script src="./scripts/script.js"></script>
+</body>
+</html>
