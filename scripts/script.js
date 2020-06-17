@@ -32,7 +32,11 @@ function defineWordToGuess() {
 function displayWordToGuess() {
   wordToDisplay = String();
   for (let letter of wordToGuess) {
-    wordToDisplay += listOfCorrectLetters.includes(letter) ? letter + "  " : "_  "
+    if (letter === "-") {
+      wordToDisplay += "-  ";
+    } else {
+      wordToDisplay += listOfCorrectLetters.includes(letter) ? letter + "  " : "_  ";
+    }
   }
   word.textContent = wordToDisplay;
 }
