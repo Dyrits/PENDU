@@ -1,31 +1,33 @@
 # Pendu
 
-# More about this project
+A hangman game ("le jeu du pendu") built with HTML, CSS, Sass and JavaScript, as practical work for an ENI course.
 
-### Related course
-ENI | LE DÉVELOPPEMENT WEB COTE CLIENT 
-TRAVAUX PRATIQUE : Module 8 : Le Language JavaScript
+## About The Project
 
-### [Description of the project by ENI](https://github.com/Dyrits/PENDU/blob/master/Module%2008%20-%20Enonc%C3%A9%20TP%2001%20-%20Le%20jeu%20du%20pendu.pdf)
+Practical work for the ENI course "Le développement web côté client" (Module 8 - Le langage JavaScript). The original assignment (in French) is available in the repository: [Module 08 - Enoncé TP 01 - Le jeu du pendu.pdf](https://github.com/Dyrits/PENDU/blob/master/Module%2008%20-%20Enonc%C3%A9%20TP%2001%20-%20Le%20jeu%20du%20pendu.pdf).
 
-### Technologies | Libraries | Frameworks | Tools  
-- HTML
-- CSS
+From the author's notes: the project was freely made from scratch following global instructions.
+
+The project can also be found on CodePen: [codepen.io/Dyrits/full/RwrGmdO](https://codepen.io/Dyrits/full/RwrGmdO)
+
+### Status
+
+Completed, per the original README.
+
+## Built With
+
+- HTML / CSS
 - Sass
 - JavaScript
 
-### Details | Comments
-- This project has been freely made from scratch following global instructions.
+## Getting Started
 
-### CodePen
-You can find this project on CodePen.
-URL: https://codepen.io/Dyrits/full/RwrGmdO
+Open `index.html` in a browser.
 
-### Status
-Completed
+## License
 
-#### Last update
-16/06/2020
+No license file is present in this repository.
 
-#### Last update (README.md)
-16/06/2020
+## Contact
+
+Dylan J. Gerrits - [GitHub](https://github.com/Dyrits)
